@@ -28,7 +28,7 @@ public class SquareMatrixServiceImpl implements MatrixService {
         Long startMills = System.currentTimeMillis();
         for (int row = 0; row < matrixSize; ++row) {
             for (int col = 0; col < matrixSize; ++col) {
-                int sum = 0;
+                float sum = 0;
                 for (int i = 0; i < sumLength; ++i) {
                     sum += firstMatrix[row][i] * secondMatrix[i][col];
                 }
